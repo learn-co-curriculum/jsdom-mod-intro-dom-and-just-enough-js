@@ -11,7 +11,7 @@ Object Model. JavaScript and the DOM have been there, together, since the
 beginning. Understanding the DOM manipulation is the _foundation_ of being a
 front-end developer.
 
-Because of they're twins, learning about the DOM will require us to write some
+Because they're twins, learning about the DOM will require us to write some
 JavaScript &mdash; which we don't know yet! And learning all the details of
 JavaScript language won't tell us anything about the DOM. It would just tell us
 how to write valid JavaScript code. It's a chicken-and-egg situation.
