@@ -58,6 +58,8 @@ Another type of Thing is an arrangement of characters, called a _String_ like
 
 Sometimes you want to hold a `String` or a `Number` under another name.
 
+> **TYPOGRAPHICAL NOTE** The `//=>` means "What JavaScript would return back".
+
 ```javascript
 3.14 //=> 3.14
 var pi = 3.14
@@ -86,10 +88,12 @@ too. We'll cover the differences between these later. They all tell JavaScript,
 
 ## Explain that JavaScript Can Compare Things
 
+```javascript
 1 < 3  //=> true
 3 == 3 //=> true
 3 != 4 //=> true
 5 > 2  //=> true
+```
 
 Be careful here, `=` means "assign to," like we did with `var` just above. For
 _comparison_ we use `==` (and, later on, `===`).
@@ -142,7 +146,6 @@ this way "dot-notation."
 The thing that holds a bit of _state_ is known as a _property_. To ask, say, an
 adorable poodle its "`name`" state, you would do it like so:
 
-> **TYPOGRAPHICAL NOTE** The `//=>` means "What JavaScript would return back".
 
 ``` javascript
 poodle.name //=> "Byron"
@@ -175,6 +178,8 @@ _methods_.  _Arguments_ change the _method's_ operation.
 poodle.eat(1) //=> "Byron eats 1 can of food"
 poodle.eat(2) //=> "Byron eats 2 cans of food"
 ```
+
+A very important object when working with the DOM is called `document`.
 
 ## Conclusion
 
