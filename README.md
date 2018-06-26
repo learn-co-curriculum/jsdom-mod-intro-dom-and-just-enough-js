@@ -28,9 +28,8 @@ Language easier. It's also the way you learned your native language. You
 learned parents, food, "I want" and "No!" etc. before you learned "adjective"
 and "noun." We want to teach you the [sight words][sight] of JavaScript.
 
-It's OK to come back here if you get confused or forget something. Some
-students even print these explanations out to help as they read along with
-lessons. Feel free to do the same.
+It's OK to come back here if you get confused or forget something. You might
+want to bookmark this page or keep it open in a tab as you move along.
 
 ## Objectives
 
