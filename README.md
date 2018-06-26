@@ -202,7 +202,7 @@ machine!</em></figcaption>
 <br><br>
 Here we can imagine JavaScript doing some calculations to turn the `Number`
 `9.57` and `String` `$` into the new string `$9.57`. We can also imagine it
-using the property of `name` to supply Byron.
+using the property of `name` to supply `Byron.`
 
 A very important object when working with the DOM is called `document`.
 
