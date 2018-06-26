@@ -58,7 +58,7 @@ Another type of Thing is an arrangement of characters, called a _String_ like
 
 Sometimes you want to hold a `String` or a `Number` under another name.
 
-> **TYPOGRAPHICAL NOTE** The `//=>` means "What JavaScript would return back".
+> **TYPOGRAPHICAL NOTE**: The `//=>` means "What JavaScript would return back".
 
 ```javascript
 3.14 //=> 3.14
