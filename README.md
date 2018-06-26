@@ -189,10 +189,16 @@ _Methods_ can take multiple arguments.
 
 ```javascript
 poodle.eyeEnviously("Shack Burger", "$", 9.57)
-// ==> "Byron eyes your Shack Burger enviously, hoping you will drop some,
-not caring the least that it cost you $9.57."
+// ==> "Byron eyes your Shack Burger enviously, hoping you will drop some, not caring the least that it cost you $9.57."
 ```
 
+<figure>
+  <img src="https://curriculum-content.s3.amazonaws.com/jsdom-mod/jsdom-mod-intro-dom-and-just-enough-js/poodle2.jpg" alt="Picture of IG:@byron_poodle_darling, who would like a snack" width="640" height="480">
+  <figcaption><em>I'm more than behavior and state, I'm a burger-eating
+machine!</em></figcaption>
+</figure>
+
+<br><br>
 Here we can imagine JavaScript doing some calculations to turn the `Number`
 `9.57` and `String` `$` into the new string `$9.57`. We can also imagine it
 using the property of `name` to supply Byron.
