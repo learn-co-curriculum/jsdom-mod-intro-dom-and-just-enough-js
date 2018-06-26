@@ -171,6 +171,12 @@ Objects's _behaviors_ have access to all of that object's properties.
 poodle.introduceYourselfFormally() //=> "Hello, my name is Byron the poodle"
 ```
 
+In this case the _method_ `introduceYourselfFormally` presumably looks at
+`poodle`'s `name` property and writes some text around it. We might imagine
+that it's returning `"Hello, my name is " + this.name + " the poodle"`. As it
+turns out, that is **entirely valid JavaScript** and it is probably what's
+happening!
+
 Finally, _behaviors_ can take _arguments_. _Behaviors_ on objects are called
 _methods_.  _Arguments_ change the _method's_ operation.
 
@@ -178,6 +184,18 @@ _methods_.  _Arguments_ change the _method's_ operation.
 poodle.eat(1) //=> "Byron eats 1 can of food"
 poodle.eat(2) //=> "Byron eats 2 cans of food"
 ```
+
+_Methods_ can take multiple arguments.
+
+```javascript
+poodle.eyeEnviously("Shack Burger", "$", 9.57)
+// ==> "Byron eyes your Shack Burger enviously, hoping you will drop some,
+not caring the least that it cost you $9.57."
+```
+
+Here we can imagine JavaScript doing some calculations to turn the `Number`
+`9.57` and `String` `$` into the new string `$9.57`. We can also imagine it
+using the property of `name` to supply Byron.
 
 A very important object when working with the DOM is called `document`.
 
