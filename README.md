@@ -40,6 +40,7 @@ lessons. Feel free to do the same.
 4. Explain that JavaScript Can Compare Things
 5. Explain that JavaScript Has Collections
 6. Explain that JavaScript Is Object-Oriented
+6. Explain that JavaScript Is Has Loops
 
 ## List Basic JavaScript Code Bits Used When Learning About The DOM
 
@@ -180,6 +181,34 @@ poodle.eat(2) //=> "Byron eats 2 cans of food"
 ```
 
 A very important object when working with the DOM is called `document`.
+
+## Explain That JavaScript Is Has Loops
+
+Another key concept in most programming languages is the idea of "looping."
+Sometimes you don't want to manually type something out multiple times, but you
+want to perform some action "for each" element in a collection. That's where
+looping comes in.
+
+In this module, we'll be using a very common loop structure that' found in C,
+C++, Java, PHP, and many other languages: The `for` loop.
+
+Let's pull together several of the concepts of this document by coding that
+"for each" character in the `slytherin` collection (or "`Array`"), we would
+like the `harry_potter` object to invoke the `expelliarmus` method on the
+wizard or witch who is passed in as an _argument_
+
+```javascript
+
+for (let i = 0; i < slytherins.count; i = i + 1) {
+  harry_potter.expelliarmus(slytherins[i]);
+}
+
+```
+
+The important thing to take away is the ability to "sight read" that `for`
+invokes the idea of doing some repeating action for each element in a
+collection. This will be explored further in our JavaScript programming
+curriculum.
 
 ## Conclusion
 
