@@ -1,0 +1,185 @@
+# Intro DOM And Just Enough JavaScript
+
+## Problem Statement
+
+Once you understand how to write HTML and CSS, an exciting next step is to
+learn JavaScript. That's where you are now!
+
+JavaScript was _born_ in the browser. It was made to work with browser content.
+JavaScript changes content through an intermediary called the DOM, the Document
+Object Model. JavaScript and the DOM have been there, together, since the
+beginning. Understanding the DOM manipulation is the _foundation_ of being a
+front-end developer.
+
+Because of they're twins, learning about the DOM will require us to write some
+JavaScript &mdash; which we don't know yet! And learning all the details of
+JavaScript language won't tell us anything about the DOM. It would just tell us
+how to write valid JavaScript code. It's a chicken-and-egg situation.
+
+This unit will teach you about the DOM, but we're going to equip you with some
+_basic_ JavaScript first. Some of these lines of code you might not fully
+understand at first and _that's OK_. We'll cover them _all_ later in more depth
+when we discuss (*cue the trumpets*) The JavaScript Programming Language.
+
+We take this approach because it's more fun. It's fun to change text on pages
+or to change layout. Also, some of the JavaScript concepts tend to sneak in
+along the way and make learning (*cue the trumpets*) The JavaScript Programming
+Language easier. It's also the way you learned your native language. You
+learned parents, food, "I want" and "No!" etc. before you learned "adjective"
+and "noun." We want to teach you the [sight words][sight] of JavaScript.
+
+It's OK to come back here if you get confused or forget something. Some
+students even print these explanations out to help as they read along with
+lessons. Feel free to do the same.
+
+## Objectives
+
+1. List basic JavaScript code bits used when learning about the DOM:
+2. Explain that JavaScript Has Things
+3. Explain that JavaScript Has Variables
+4. Explain that JavaScript Can Compare Things
+5. Explain that JavaScript Has Collections
+6. Explain that JavaScript Is Object-Oriented
+
+## List Basic JavaScript Code Bits Used When Learning About The DOM
+
+## Explain that JavaScript Has Things
+
+It might sound a bit weird to say, but there are "Things" in JavaScript. You
+might have heard them called "types" if you've programmed before.
+
+One type of Thing is a _Number_ like `2` or `3.14`.
+
+Another type of Thing is an arrangement of characters, called a _String_ like
+`"Byron"` or `'Please feed the dog'`. Strings are written inside of `"` **or**
+`'`.
+
+## Explain that JavaScript Has Variables
+
+Sometimes you want to hold a `String` or a `Number` under another name.
+
+```javascript
+3.14 //=> 3.14
+var pi = 3.14
+pi //=> 3.14
+```
+
+JavaScript also lets you say:
+
+```javascript
+3.14 //=> 3.14
+let pi = 3.14
+pi //=> 3.14
+```
+
+or
+
+```javascript
+3.14 //=> 3.14
+const pi = 3.14
+pi //=> 3.14
+```
+
+When JavaScript first came out it had only `var`. Now it has `let` and `const`
+too. We'll cover the differences between these later. They all tell JavaScript,
+"Hey this is a name that I'm going to associate with some bit of information."
+
+## Explain that JavaScript Can Compare Things
+
+1 < 3  //=> true
+3 == 3 //=> true
+3 != 4 //=> true
+5 > 2  //=> true
+
+Be careful here, `=` means "assign to," like we did with `var` just above. For
+_comparison_ we use `==` (and, later on, `===`).
+
+We can build on our previous example:
+
+```javascript
+3.14 //=> 3.14
+const pi = 3.14
+pi //=> 3.14
+pi == 3.14 //=> true
+```
+
+## Explain that JavaScript Has Collections
+
+Sometimes a _variable_ might point to a Thing which actually has multiple
+Things inside of it. If you're familiar with programming, these collection
+Things are called _arrays_. So technically, `Array` belongs with `String` and
+`Number`.
+
+```javascript
+slytherins[0] //=> "Salazar Slytherin"
+slytherins[1] //=> "Bellatrix Black"
+slytherins[2] //=> "Draco Malfoy"
+```
+
+In JavaScript, _arrays_ start at `0`. In America, the floor where you walk in
+is called the `1` floor (or first floor). In most of Europe and the rest of the
+world, the floor where you walk in is called something else. Arrays are like
+that, they start at `0`.
+
+We can get one of the _elements_ of a collection by putting `[]` after a
+collection's name and putting a number inside of the `[]`. In the example we
+get the names of some wizards stored in a collection of wizard-names
+(`Strings`).
+
+## Explain that JavaScript is Object-Oriented
+
+When working with the DOM in JavaScript, many of the Things are you meet are
+_objects_. _Objects_ are bits of code you can talk to that know _state_ and
+_behavior_. _Objects_ should round out our universe of JavaScript Things along
+with `Array`s, `String`s, and `Number`s.
+
+When talking to an _object_ you can ask it for a bit of _state_ by using a `.`
+and then that _state's_ name. You can trigger _behavior_ by using a `.` and
+then the _behavior's_ name followed by `()`. Due to the `.` being the separator
+between the object-name and the state or behavior name, we call writing code
+this way "dot-notation."
+
+The thing that holds a bit of _state_ is known as a _property_. To ask, say, an
+adorable poodle its "`name`" state, you would do it like so:
+
+> **TYPOGRAPHICAL NOTE** The `//=>` means "What JavaScript would return back".
+
+``` javascript
+poodle.name //=> "Byron"
+```
+
+If you ask an object for a _property_ it doesn't have, JavaScript says
+`undefined`
+
+``` javascript
+poodle.favoritePainter //=> undefined
+```
+
+When asking an object to _do_ something (a _behavior_),  you use a `.` and a
+_behavior-name_ (usually a verb) followed by `()`.
+
+```javascript
+poodle.bark() //=> An ear-splitting bark is heard
+```
+
+Objects's _behaviors_ have access to all of that object's properties.
+
+```javascript
+poodle.introduceYourselfFormally() //=> "Hello, my name is Byron the poodle"
+```
+
+Finally, _behaviors_ can take _arguments_. _Behaviors_ on objects are called
+_methods_.  _Arguments_ change the _method's_ operation.
+
+```javascript
+poodle.eat(1) //=> "Byron eats 1 can of food"
+poodle.eat(2) //=> "Byron eats 2 cans of food"
+```
+
+## Conclusion
+
+In this lesson you've learned the "sight words" of basic JavaScript. You should
+be able to reason about what code is doing when it works with the DOM in the
+subsequent lessons.
+
+[sight]: https://en.wikipedia.org/wiki/Sight_word
