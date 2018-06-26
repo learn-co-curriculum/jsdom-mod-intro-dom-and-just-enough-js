@@ -189,7 +189,8 @@ _Methods_ can take multiple arguments.
 
 ```javascript
 poodle.eyeEnviously("Shack Burger", "$", 9.57)
-// ==> "Byron eyes your Shack Burger enviously, hoping you will drop some, not caring the least that it cost you $9.57."
+// ==> "Byron eyes your Shack Burger enviously, hoping you will drop some,
+// ==> not caring the least that it cost you $9.57."
 ```
 
 <figure>
