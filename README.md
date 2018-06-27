@@ -85,8 +85,9 @@ free to consult [MDN's JavaScript Reference][ref].
 
 ## Explain that JavaScript Has Things
 
-It might sound a bit weird to say, but there are "Things" in JavaScript. You
-might have heard them called "types" if you've programmed before.
+It might sound a bit weird to say, but there are "Things" in JavaScript. Most
+programming languages call these "types." For the moment we're going to call
+them **Things**.
 
 One type of Thing is a _Number_ like `2` or `3.14`.
 
@@ -153,9 +154,8 @@ pi == 3.14 //=> true
 ## Explain that JavaScript Has Collections
 
 Sometimes a _variable_ might point to a Thing which actually has multiple
-Things inside of it. If you're familiar with programming, these collection
-Things are called _arrays_. So technically, `Array` belongs with `String` and
-`Number`.
+Things inside of it. In programming vocabulary, these collection Things are
+called _arrays_. So technically, `Array` belongs with `String` and `Number`.
 
 ```javascript
 slytherins[0] //=> "Salazar Slytherin"
