@@ -240,8 +240,10 @@ In this lesson you've learned the "sight words" of basic JavaScript. You should
 be able to reason about what code is doing when it works with the DOM in the
 subsequent lessons. Don't forget the power of imagination! By looking at these
 bits of code, you can _imagine_ that the code, written by humans just like you
-_probably does something like..._. You might be surprised, but professional
-developers try not to make their code surprising or "non-intuitive" as much as
-possible. Guesses and imagination are a vital part of your toolkit!
+_probably does something like..._. Professional developers try to make their code's
+function as "guessable" as possible.
+
+
+Guesses and imagination are a vital part of your toolkit!
 
 [sight]: https://en.wikipedia.org/wiki/Sight_word
