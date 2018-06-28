@@ -53,7 +53,8 @@ how to write valid JavaScript code. It's a chicken-and-egg situation.
 
 To get around this problem we start by learning some basic structures of
 JavaScript called "sight words." We're going to learn "just enough JavaScript"
-so that we can start working with the DOM &mdash; the best way to understand it.
+so that we can start working with the DOM &mdash; the best way to understand
+it.
 
 ## Explain "Sight Words"
 
@@ -94,7 +95,11 @@ One type of Thing is a _Number_ like `2` or `3.14`.
 
 Another type of Thing is an arrangement of characters, called a _String_ like
 `"Byron"` or `'Please feed the dog'`. Strings are written inside of `"` **or**
-`'`.
+`'`. Strings are quoted because  `if` _might_ mean something very special to
+JavaScript (more on that later)...but it also might be the beginning of a bit
+of text "if you can keep your head when all about you are losing theirs..."
+`if`, in this case is a _reserved word_ &mdash; something special to
+JavaScript. The String is, well, just some text.
 
 ## Explain that JavaScript Has Variables
 
