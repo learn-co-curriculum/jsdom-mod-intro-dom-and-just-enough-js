@@ -1,52 +1,93 @@
-# Intro DOM And Just Enough JavaScript
+# Intro to DOM Programming and Just Enough JavaScript
 
 ## Problem Statement
 
 Once you understand how to write HTML and CSS, an exciting next step is to
 learn JavaScript. That's where you are now!
 
-JavaScript was _born_ in the browser. It was made to work with browser content.
-JavaScript changes content through an intermediary called the DOM, the Document
-Object Model. JavaScript and the DOM have been there, together, since the
-beginning. Understanding the DOM manipulation is the _foundation_ of being a
-front-end developer.
+JavaScript can do many kinds of work, from building web servers, to creating
+"infinite scroll" effects. But it was originally designed to do a type of
+programming called **Document-Object Model (DOM) programming**. Understanding
+the DOM programming is the _foundation_ of being a front-end developer.That's
+what the next several lessons will teach.
+
+DOM programming is using JavaScript to:
+
+1. Ask the DOM to find an HTML element or elements in the rendered page
+2. Remove the selected element(s) or add a new element next to the selected element
+3. Adjust a property of the selected element(s)
+
+Our next lessons will proceed by:
+
+1. Teaching you JavaScript [sight words][sight] (this lesson)
+2. Teaching you about the DOM (2 lessons)
+3. Using the DOM to select elements
+4. Using the DOM to add / remove elements
+5. Using the DOM to change elements' appearance
+
+## Objectives
+
+1. Explain the JavaScript / DOM relationship
+2. Explain "sight words"
+3. Explain "Just Enough JavaScript" concept
+4. Explain that JavaScript Has Things
+5. Explain that JavaScript Has Variables
+6. Explain that JavaScript Can Compare Things
+7. Explain that JavaScript Has Collections
+8. Explain that JavaScript Is Object-Oriented
+9. Explain that JavaScript Is Has Loops
+
+## Explain the JavaScript / DOM Relationship
+
+JavaScript was _born_ in the browser. It was literally made to work with
+rendered browser content.
+
+JavaScript changes rendered content through an intermediary called the DOM, the
+Document Object Model. The DOM _only_ knows how to be spoken to in JavaScript.
+JavaScript and the DOM have been there, together, since the beginning.
 
 Because they're twins, learning about the DOM will require us to write some
 JavaScript &mdash; which we don't know yet! And learning all the details of
 JavaScript language won't tell us anything about the DOM. It would just tell us
 how to write valid JavaScript code. It's a chicken-and-egg situation.
 
-This unit will teach you about the DOM, but we're going to equip you with some
-_basic_ JavaScript first. Some of these lines of code you might not fully
-understand at first and _that's OK_. We'll cover them _all_ later in more depth
-when we discuss (*cue the trumpets*) The JavaScript Programming Language.
+To get around this problem we start by learning some basic structures of
+JavaScript called "sight words."
 
-We take this approach because it's more fun. It's fun to change text on pages
-or to change layout. Also, some of the JavaScript concepts tend to sneak in
-along the way and make learning (*cue the trumpets*) The JavaScript Programming
-Language easier. It's also the way you learned your native language. You
-learned parents, food, "I want" and "No!" etc. before you learned "adjective"
-and "noun." We want to teach you the [sight words][sight] of JavaScript.
+## Explain "Sight Words"
+
+When you learned to read, before you understood the process of joining letters
+into sounds and sounds into words, you had a limited, but powerful vocabulary.
+This vocabulary contained your "[sight words][sight]." These are also the words
+you tend to memorize before you go on a trip: MEN, WOMEN, WATER, HOSPITAL.
+
+This lesson will provide you the "sight words" of JavaScript.  Some of these
+lines of code you might not fully understand at first and _that's OK_. We'll
+cover them _all_ later in more depth when we discuss (*cue the trumpets*) The
+JavaScript Programming Language.
+
+## Explain "Just Enough JavaScript" Concept
+
+We call the approach of learning JavaScript sight words "Just Enough
+JavaScript." We learn so much better by working with technology than by reading
+words
+
+We take this approach, well, because it's just more fun. It's fun to change
+text on pages or update styling. Also, some of the JavaScript concepts tend to
+sneak in along the way and make learning (*cue the trumpets*) The JavaScript
+Programming Language easier.
 
 It's OK to come back here if you get confused or forget something. You might
-want to bookmark this page or keep it open in a tab as you move along.
-
-## Objectives
-
-1. List basic JavaScript code bits used when learning about the DOM:
-2. Explain that JavaScript Has Things
-3. Explain that JavaScript Has Variables
-4. Explain that JavaScript Can Compare Things
-5. Explain that JavaScript Has Collections
-6. Explain that JavaScript Is Object-Oriented
-6. Explain that JavaScript Is Has Loops
-
-## List Basic JavaScript Code Bits Used When Learning About The DOM
+want to bookmark this page or keep it open in a tab as you move along. This is
+all OK in the "Just Enough" approach. In the following sections we list several
+"sight words" of JavaScript. If you want to know more about a sight word, feel
+free to consult [MDN's JavaScript Reference][ref].
 
 ## Explain that JavaScript Has Things
 
-It might sound a bit weird to say, but there are "Things" in JavaScript. You
-might have heard them called "types" if you've programmed before.
+It might sound a bit weird to say, but there are "Things" in JavaScript. Most
+programming languages call these "types." For the moment we're going to call
+them **Things**.
 
 One type of Thing is a _Number_ like `2` or `3.14`.
 
@@ -59,10 +100,13 @@ Another type of Thing is an arrangement of characters, called a _String_ like
 Sometimes you want to hold a `String` or a `Number` under another name.
 
 > **TYPOGRAPHICAL NOTE**: The `//=>` means "What JavaScript would return back".
+> For now, think about what's "returned back" as an answer to a question that
+> you're asking JavaScript. Sometimes, too, you tell JavaScript a fact and it
+> will just return it to you.
 
 ```javascript
 3.14 //=> 3.14
-var pi = 3.14
+var pi = 3.14 //=> `undefined` and that is, uh, surprising. We'll cover that later!
 pi //=> 3.14
 ```
 
@@ -70,7 +114,7 @@ JavaScript also lets you say:
 
 ```javascript
 3.14 //=> 3.14
-let pi = 3.14
+let pi = 3.14 //=> `undefined`
 pi //=> 3.14
 ```
 
@@ -78,7 +122,7 @@ or
 
 ```javascript
 3.14 //=> 3.14
-const pi = 3.14
+const pi = 3.14 //=> `undefined`
 pi //=> 3.14
 ```
 
@@ -110,9 +154,8 @@ pi == 3.14 //=> true
 ## Explain that JavaScript Has Collections
 
 Sometimes a _variable_ might point to a Thing which actually has multiple
-Things inside of it. If you're familiar with programming, these collection
-Things are called _arrays_. So technically, `Array` belongs with `String` and
-`Number`.
+Things inside of it. In programming vocabulary, these collection Things are
+called _arrays_. So technically, `Array` belongs with `String` and `Number`.
 
 ```javascript
 slytherins[0] //=> "Salazar Slytherin"
@@ -127,8 +170,8 @@ that, they start at `0`.
 
 We can get one of the _elements_ of a collection by putting `[]` after a
 collection's name and putting a number inside of the `[]`. In the example we
-get the names of some wizards stored in a collection of wizard-names
-(`Strings`).
+get the `String` names of some wizards stored in a collection of wizards
+identified by the name `slytherins`.
 
 ## Explain that JavaScript is Object-Oriented
 
@@ -159,26 +202,25 @@ poodle.favoritePainter //=> undefined
 ```
 
 When asking an object to _do_ something (a _behavior_),  you use a `.` and a
-_behavior-name_ (usually a verb) followed by `()`.
+_behavior-name_ (usually a verb) followed by `()`. _Behaviors_ on objects are
+called _methods_.
 
 ```javascript
 poodle.bark() //=> An ear-splitting bark is heard
 ```
 
-Objects's _behaviors_ have access to all of that object's properties.
+Objects' _methods_ have access to all of that object's properties.
 
 ```javascript
 poodle.introduceYourselfFormally() //=> "Hello, my name is Byron the poodle"
 ```
 
 In this case the _method_ `introduceYourselfFormally` presumably looks at
-`poodle`'s `name` property and writes some text around it. We might imagine
-that it's returning `"Hello, my name is " + this.name + " the poodle"`. As it
-turns out, that is **entirely valid JavaScript** and it is probably what's
-happening!
+`poodle`'s `name` property and adds some text around it. We might imagine that
+it's making `"Hello, my name is " + this.name + " the poodle"`. As it turns
+out, that is **entirely valid JavaScript** and it is probably what's happening!
 
-Finally, _behaviors_ can take _arguments_. _Behaviors_ on objects are called
-_methods_.  _Arguments_ change the _method's_ operation.
+Finally, _methods_ can take _arguments_. _Arguments_ change the _method's_ operation.
 
 ```javascript
 poodle.eat(1) //=> "Byron eats 1 can of food"
@@ -195,8 +237,7 @@ poodle.eyeEnviously("Shack Burger", "$", 9.57)
 
 <figure>
   <img src="https://curriculum-content.s3.amazonaws.com/jsdom-mod/jsdom-mod-intro-dom-and-just-enough-js/poodle2.jpg" alt="Picture of IG:@byron_poodle_darling, who would like a snack" width="640" height="480">
-  <figcaption><em>I'm more than behavior and state, I'm a burger-eating
-machine!</em></figcaption>
+  <figcaption><em>I'm more than behavior and state, I'm a burger-eating machine!</em></figcaption>
 </figure>
 
 <br><br>
@@ -204,46 +245,47 @@ Here we can imagine JavaScript doing some calculations to turn the `Number`
 `9.57` and `String` `$` into the new string `$9.57`. We can also imagine it
 using the property of `name` to supply `Byron`.
 
-A very important object when working with the DOM is called `document`.
+**A very important object when working with the DOM is called `document`.**
 
 ## Explain That JavaScript Is Has Loops
 
-Another key concept in most programming languages is the idea of "looping."
+Our final key concept is the idea of "looping."
+
 Sometimes you don't want to manually type something out multiple times, but you
 want to perform some action "for each" element in a collection. That's where
 looping comes in.
 
-In this module, we'll be using a very common loop structure that' found in C,
+In this module, we'll be using a very common loop structure that's found in C,
 C++, Java, PHP, and many other languages: The `for` loop.
 
-Let's pull together several of the concepts of this document by coding that
+Let's pull together several of the concepts of this lesson by coding:
+
 "for each" character in the `slytherin` collection (or "`Array`"), we would
-like the `harry_potter` object to invoke the `expelliarmus` method on the
+like the `harry_potter` object to invoke its `expelliarmus` method on the
 wizard or witch who is passed in as an _argument_
 
 ```javascript
-
 for (let i = 0; i < slytherins.count; i = i + 1) {
   harry_potter.expelliarmus(slytherins[i]);
 }
-
 ```
 
 The important thing to take away is the ability to "sight read" that `for`
 invokes the idea of doing some repeating action for each element in a
-collection. This will be explored further in our JavaScript programming
-curriculum.
+collection.
 
 ## Conclusion
 
 In this lesson you've learned the "sight words" of basic JavaScript. You should
 be able to reason about what code is doing when it works with the DOM in the
-subsequent lessons. Don't forget the power of imagination! By looking at these
-bits of code, you can _imagine_ that the code, written by humans just like you
-_probably does something like..._. Professional developers try to make their code's
-function as "guessable" as possible.
+subsequent lessons.
 
+Don't forget the power of imagination! By looking at these bits of code, you
+can _imagine_ that the code, written by humans just like you _probably does
+something like..._. Professional developers try to make their code's function
+as "guessable" as possible.
 
 Guesses and imagination are a vital part of your toolkit!
 
 [sight]: https://en.wikipedia.org/wiki/Sight_word
+[ref]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
