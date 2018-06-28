@@ -61,7 +61,8 @@ it.
 When you learned to read, before you understood the process of joining letters
 into sounds and sounds into words, you had a limited, but powerful vocabulary.
 This vocabulary contained your "[sight words][sight]." These are also the words
-you tend to memorize before you go on a trip: MEN, WOMEN, WATER, HOSPITAL.
+you tend to memorize before you go on a trip abroad: MEN, WOMEN, WATER, FOOD,
+HOSPITAL.
 
 This lesson will provide you the "sight words" of JavaScript.  Some of these
 lines of code you might not fully understand at first and _that's OK_. We'll
