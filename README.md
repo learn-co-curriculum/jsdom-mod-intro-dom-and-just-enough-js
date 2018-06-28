@@ -8,8 +8,8 @@ learn JavaScript. That's where you are now!
 JavaScript can do many kinds of work, from building web servers, to creating
 "infinite scroll" effects. But it was originally designed to do a type of
 programming called **Document-Object Model (DOM) programming**. Understanding
-the DOM programming is the _foundation_ of being a front-end developer.That's
-what the next several lessons will teach.
+DOM programming is the _foundation_ of being a front-end developer. That's what
+the next several lessons will teach.
 
 DOM programming is using JavaScript to:
 
