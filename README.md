@@ -52,7 +52,8 @@ JavaScript language won't tell us anything about the DOM. It would just tell us
 how to write valid JavaScript code. It's a chicken-and-egg situation.
 
 To get around this problem we start by learning some basic structures of
-JavaScript called "sight words."
+JavaScript called "sight words." We're going to learn "just enough JavaScript"
+so that we can start working with the DOM &mdash; the best way to understand it.
 
 ## Explain "Sight Words"
 
