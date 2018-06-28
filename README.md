@@ -13,11 +13,11 @@ the next several lessons will teach.
 
 DOM programming is using JavaScript to:
 
-1. Ask the DOM to find an HTML element or elements in the rendered page
-2. Remove the selected element(s) or add a new element next to the selected element
+1. Ask the DOM to find or "select" an HTML element or elements in the rendered page
+2. Remove the selected element(s) or insert a new element (and / or)
 3. Adjust a property of the selected element(s)
 
-Our next lessons will proceed by:
+For a broad overview, our next lessons will proceed by:
 
 1. Teaching you JavaScript [sight words][sight] (this lesson)
 2. Teaching you about the DOM (2 lessons)
