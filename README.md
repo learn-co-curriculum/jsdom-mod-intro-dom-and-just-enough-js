@@ -257,8 +257,6 @@ using the property of `name` to supply `Byron`.
 
 ## Explain That JavaScript Is Has Loops
 
-Our final key concept is the idea of "looping."
-
 Sometimes you don't want to manually type something out multiple times, but you
 want to perform some action "for each" element in a collection. That's where
 looping comes in.
