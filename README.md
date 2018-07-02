@@ -30,12 +30,13 @@ For a broad overview, our next lessons will proceed by:
 1. Explain the JavaScript / DOM relationship
 2. Explain "sight words"
 3. Explain "Just Enough JavaScript" concept
-4. Explain that JavaScript Has Things
-5. Explain that JavaScript Has Variables
-6. Explain that JavaScript Can Compare Things
-7. Explain that JavaScript Has Collections
-8. Explain that JavaScript Is Object-Oriented
-9. Explain that JavaScript Is Has Loops
+4. Explain that JavaScript has things
+5. Explain that JavaScript has variables
+6. Explain that JavaScript can compare things
+7. Explain that JavaScript has collections
+8. Explain that JavaScript is object-oriented
+9. Explain that JavaScript is has loops
+9. Explain that JavaScript logs with `console.log`
 
 ## Explain the JavaScript / DOM Relationship
 
@@ -280,6 +281,29 @@ for (let i = 0; i < slytherins.count; i = i + 1) {
 The important thing to take away is the ability to "sight read" that `for`
 invokes the idea of doing some repeating action for each element in a
 collection.
+
+## Explain That JavaScript Logs With `console.log`
+
+In the examples that follow, and in much of the technical documentation of
+JavaScript, you will see the following _method_ used: `console.log()`. This
+method is used to print something. Often it's used to print out a variable or
+some bit of data to make a point or to debug something.
+
+Let's build on the loop example. Let's say we want to know who `harry_potter`
+is defending against:
+
+
+```javascript
+for (let i = 0; i < slytherins.count; i = i + 1) {
+  console.log(`Harry is about to disarm ${slytherins[i]}`);
+  harry_potter.expelliarmus(slytherins[i]);
+  console.log(`${slytherins[i]} is defenseless!`);
+}
+```
+
+We'll discuss this _method_ in more detail later, but it's a way to get
+JavaScript to "talk to our screen."
+
 
 ## Conclusion
 
