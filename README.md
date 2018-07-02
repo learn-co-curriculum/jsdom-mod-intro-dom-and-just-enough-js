@@ -73,8 +73,8 @@ JavaScript Programming Language.
 ## Explain "Just Enough JavaScript" Concept
 
 We call the approach of learning JavaScript sight words "Just Enough
-JavaScript." We learn so much better by working with technology than by reading
-words
+JavaScript." We learn so much better by working with technology than by
+merely reading words.
 
 We take this approach, well, because it's just more fun. It's fun to change
 text on pages or update styling. Also, some of the JavaScript concepts tend to
