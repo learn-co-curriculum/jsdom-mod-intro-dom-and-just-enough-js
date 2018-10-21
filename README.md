@@ -183,7 +183,7 @@ identified by the name `slytherins`.
 
 ## Explain that JavaScript is Object-Oriented
 
-When working with the DOM in JavaScript, many of the Things are you meet are
+When working with the DOM in JavaScript, many of the things you meet are
 _objects_. _Objects_ are bits of code you can talk to that know _state_ and
 _behavior_. _Objects_ should round out our universe of JavaScript Things along
 with `Array`s, `String`s, and `Number`s.
